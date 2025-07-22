@@ -1,11 +1,12 @@
 from flask import Flask, request, jsonify
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from optimum.onnxruntime import ORTModelForCausalLM
+from transformers import AutoTokenizer
 import torch
 
 app = Flask(__name__)
-model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"  # 或 './tinyllama-finetuned'
+model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name)
+model = ORTModelForCausalLM.from_pretrained(model_name, export=True)
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -13,7 +14,7 @@ def chat():
     message = data.get('message', '')
     history = data.get('history', [])
     
-    prompt = "你是一个亲切的中文助手，回答简洁、准确。\n"
+    prompt = "你是一个亲切的中文生活助手，回答简洁、实用。\n"
     for user_msg, bot_msg in history:
         prompt += f"User: {user_msg}\nAssistant: {bot_msg}\n"
     prompt += f"User: {message}\nAssistant: "
@@ -26,4 +27,4 @@ def chat():
     return jsonify({'response': response, 'history': history + [[message, response]]})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    app.run(host='0.0.0.0', port=8080)  # Render 默认端口
