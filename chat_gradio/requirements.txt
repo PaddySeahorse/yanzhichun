@@ -1,3 +1,5 @@
 flask==3.0.3
 transformers==4.44.2
 torch==2.4.1
+optimum==1.22.0
+onnxruntime==1.19.2
