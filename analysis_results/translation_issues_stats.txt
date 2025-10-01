@@ -1,0 +1,83 @@
+翻译质量统计报告
+==================================================
+
+总记录数: 591753
+良好翻译: 417760 (70.60%)
+包含空格的翻译: 173993 (29.40%)
+平均单词数(有空格条目): 2.15
+翻译错误标记: 0 (0.00%)
+缺少caption_zh字段: 0 (0.00%)
+空翻译: 0 (0.00%)
+
+问题条目样例:
+------------------------------
+
+样例 1:
+ID: 37
+问题类型: contains_spaces
+英文: A bicycle replica with a clock as the front wheel.
+中文: 自行车复制品 时钟当前轮
+单词数: 2
+
+样例 2:
+ID: 101
+问题类型: contains_spaces
+英文: There is a GOL plane taking off in a partly cloudy sky.
+中文: 有一架GOL飞机起飞 在部分阴云的天空中
+单词数: 2
+
+样例 3:
+ID: 121
+问题类型: contains_spaces
+英文: This is a blue and white bathroom with a wall sink and a lifesaver on the wall.
+中文: 这是一个蓝色和白色的浴室 墙上有一个水槽 墙上还有救生衣
+单词数: 3
+
+样例 4:
+ID: 163
+问题类型: contains_spaces
+英文: A blue boat themed bathroom with a life preserver on the wall
+中文: 一辆蓝色的船 他们的浴室 墙上有一个救生员
+单词数: 3
+
+样例 5:
+ID: 391
+问题类型: contains_spaces
+英文: A long empty, minimal modern skylit home kitchen.
+中文: 一个漫长的空荡荡的 最起码的现代天文家庭厨房
+单词数: 2
+
+样例 6:
+ID: 478
+问题类型: contains_spaces
+英文: A black metal bicycle with a clock inside the front wheel.
+中文: 一辆黑色金属自行车 前轮内有钟
+单词数: 2
+
+样例 7:
+ID: 699
+问题类型: contains_spaces
+英文: A man in a wheelchair and another sitting on a bench that is overlooking the water.
+中文: 一个人坐在轮椅上 另一人坐在椅子上 俯视着水面
+单词数: 3
+
+样例 8:
+ID: 791
+问题类型: contains_spaces
+英文: A messy bathroom countertop perched atop black cabinetry.
+中文: 一个乱七八糟的浴室柜台 贴在黑柜子上
+单词数: 2
+
+样例 9:
+ID: 935
+问题类型: contains_spaces
+英文: A bathroom with a sink and shower curtain with a map print.
+中文: 洗手间有水槽 浴幕有地图印
+单词数: 2
+
+样例 10:
+ID: 961
+问题类型: contains_spaces
+英文: A brown and black horse in the middle of the city eating grass.
+中文: 一匹棕色和黑色马 在城市中部吃草
+单词数: 2
